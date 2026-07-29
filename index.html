@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macro Calculator — Free Online | Tabutility</title>
+  <meta name="description" content="Calculate your daily protein, carbs and fat targets based on your goal, weight and activity level.">
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://macro-calculator.tabutility.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://macro-calculator.tabutility.com/">
+  <meta property="og:title" content="Macro Calculator — Free Online | Tabutility">
+  <meta property="og:description" content="Calculate your daily protein, carbs and fat targets based on your goal, weight and activity level.">
+  <meta property="og:image" content="https://tabutility.com/og-blog.png">
+  <meta property="og:site_name" content="Tabutility">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://tabutility.com/og-blog.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <meta name="theme-color" content="#0f172a">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Macro Calculator","url":"https://macro-calculator.tabutility.com/","description":"Calculate your daily protein, carbs and fat targets based on your goal, weight and activity level.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Macro Calculator","item":"https://macro-calculator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are macros?","acceptedAnswer":{"@type":"Answer","text":"Macros (macronutrients) are protein, carbohydrates and fat — the three main nutrients that provide calories. Tracking them helps you reach specific body composition goals."}},{"@type":"Question","name":"How much protein do I need?","acceptedAnswer":{"@type":"Answer","text":"Most research suggests 1.6–2.2g of protein per kg of bodyweight for muscle building. This calculator uses your goal to set the right target."}},{"@type":"Question","name":"What is IIFYM?","acceptedAnswer":{"@type":"Answer","text":"IIFYM (If It Fits Your Macros) is a flexible dieting approach where you eat any foods as long as your daily macro targets are met."}}]}</script>
+  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+</head>
+<body style="margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh">
+<nav style="background:#1e293b;padding:11px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #334155"><a href="https://tabutility.com" style="color:#fff;font-weight:800;font-size:16px;text-decoration:none">⚡ Tabutility</a><a href="https://tabutility.com/blog/" style="color:#a5b4fc;font-size:13px;font-weight:700;text-decoration:none">📖 Blog</a></nav>
+<div style="max-width:640px;margin:12px auto;padding:0 8px"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div id="app" style="max-width:640px;margin:8px auto;padding:0 8px 32px">
+  <h1 style="font-size:24px;font-weight:800;margin:0 0 4px">🥗 Macro Calculator</h1>
+  <p style="color:#94a3b8;font-size:14px;margin:0 0 20px">Calculate your daily protein, carbs and fat targets (IIFYM) for your specific goal.</p>
+  <div style="background:#1e293b;border-radius:10px;padding:18px;border:1px solid #334155;margin-bottom:14px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Age</label><input id="age" type="number" placeholder="30" min="15" max="80" oninput="calc()" style="width:100%;box-sizing:border-box;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:15px;margin-top:6px;outline:none"></div>
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Sex</label><select id="sex" onchange="calc()" style="width:100%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:14px;margin-top:6px;outline:none"><option value="m">Male</option><option value="f">Female</option></select></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Height</label><div style="display:flex;gap:6px;margin-top:6px"><input id="ft" type="number" placeholder="5" min="4" max="7" oninput="calc()" style="width:50%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 8px;color:#f1f5f9;font-size:14px;outline:none"><input id="inch" type="number" placeholder="9" min="0" max="11" oninput="calc()" style="width:50%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 8px;color:#f1f5f9;font-size:14px;outline:none"></div><div style="font-size:11px;color:#475569;margin-top:2px">ft &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in</div></div>
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Weight (lbs)</label><input id="wt" type="number" placeholder="160" min="80" max="400" oninput="calc()" style="width:100%;box-sizing:border-box;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:15px;margin-top:6px;outline:none"></div>
+    </div>
+    <div style="margin-bottom:12px"><label style="font-size:12px;color:#94a3b8;font-weight:600">Activity Level</label><select id="act" onchange="calc()" style="width:100%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:14px;margin-top:6px;outline:none">
+      <option value="1.2">Sedentary (little or no exercise)</option>
+      <option value="1.375">Lightly active (1–3 days/week)</option>
+      <option value="1.55" selected>Moderately active (3–5 days/week)</option>
+      <option value="1.725">Very active (6–7 days/week)</option>
+      <option value="1.9">Extra active (physical job + training)</option>
+    </select></div>
+    <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Goal</label><select id="goal" onchange="calc()" style="width:100%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:14px;margin-top:6px;outline:none">
+      <option value="cut">Lose fat (–500 cal/day)</option>
+      <option value="maintain" selected>Maintain weight</option>
+      <option value="bulk">Build muscle (+300 cal/day)</option>
+    </select></div>
+  </div>
+  <div id="results" style="display:none">
+    <div style="background:#1e293b;border-radius:10px;padding:18px;border:1px solid #334155;margin-bottom:14px">
+      <div style="text-align:center;margin-bottom:16px"><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">DAILY CALORIES</div><div id="r-kcal" style="font-size:32px;font-weight:900;color:#fbbf24"></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
+        <div style="background:#0f172a;border-radius:8px;padding:14px;text-align:center"><div style="font-size:20px;margin-bottom:4px">🥩</div><div style="font-size:20px;font-weight:800;color:#f87171" id="r-prot"></div><div style="font-size:11px;color:#94a3b8">Protein (g)</div></div>
+        <div style="background:#0f172a;border-radius:8px;padding:14px;text-align:center"><div style="font-size:20px;margin-bottom:4px">🍚</div><div style="font-size:20px;font-weight:800;color:#4ade80" id="r-carb"></div><div style="font-size:11px;color:#94a3b8">Carbs (g)</div></div>
+        <div style="background:#0f172a;border-radius:8px;padding:14px;text-align:center"><div style="font-size:20px;margin-bottom:4px">🥑</div><div style="font-size:20px;font-weight:800;color:#fbbf24" id="r-fat"></div><div style="font-size:11px;color:#94a3b8">Fat (g)</div></div>
+      </div>
+      <div id="r-note" style="font-size:12px;color:#475569;margin-top:12px;text-align:center"></div>
+    </div>
+  </div>
+  <div id="prompt" style="color:#64748b;font-size:14px;text-align:center;padding:20px">Fill in your details above to get your macro targets</div>
+</div>
+<script>
+function calc(){
+  const age=parseInt(document.getElementById('age').value);
+  const sex=document.getElementById('sex').value;
+  const ft=parseFloat(document.getElementById('ft').value)||0;
+  const inch=parseFloat(document.getElementById('inch').value)||0;
+  const wt=parseFloat(document.getElementById('wt').value);
+  const act=parseFloat(document.getElementById('act').value);
+  const goal=document.getElementById('goal').value;
+  if(!age||!wt||(!ft&&!inch)){document.getElementById('results').style.display='none';document.getElementById('prompt').style.display='block';return;}
+  const htCm=(ft*12+inch)*2.54;
+  const wtKg=wt*0.453592;
+  // Mifflin-St Jeor
+  const bmr=sex==='m'?(10*wtKg+6.25*htCm-5*age+5):(10*wtKg+6.25*htCm-5*age-161);
+  let tdee=bmr*act;
+  if(goal==='cut') tdee-=500;
+  if(goal==='bulk') tdee+=300;
+  tdee=Math.round(tdee);
+  // Macros
+  const protG=Math.round(wtKg*(goal==='bulk'?2.2:goal==='cut'?2.0:1.8));
+  const fatG=Math.round(tdee*0.25/9);
+  const carbG=Math.round((tdee-protG*4-fatG*9)/4);
+  document.getElementById('results').style.display='block';
+  document.getElementById('prompt').style.display='none';
+  document.getElementById('r-kcal').textContent=tdee+' kcal';
+  document.getElementById('r-prot').textContent=protG;
+  document.getElementById('r-carb').textContent=Math.max(0,carbG);
+  document.getElementById('r-fat').textContent=fatG;
+  document.getElementById('r-note').textContent=goal==='cut'?'Calorie deficit for fat loss · Adjust weekly based on progress':goal==='bulk'?'Calorie surplus for muscle growth · Monitor weight weekly':'Maintenance calories · Adjust if weight changes';
+}
+</script>
+<div style="max-width:640px;margin:12px auto;padding:0 8px"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://www.amazon.com/s?k=health+nutrition+fitness+books&tag=tabutility-20','_blank','noopener noreferrer')" title="Improve your health?">
+  <span style="font-size:28px;flex-shrink:0">📚</span>
+  <div style="min-width:0">
+    <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Improve your health?</div>
+    <div style="font-size:12px;color:#94a3b8">Browse health & nutrition books <span style="color:#f59e0b;white-space:nowrap">→ Browse on Amazon</span></div>
+    <div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div>
+  </div>
+</div>
+<h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;max-width:640px;margin-left:auto;margin-right:auto">Related Tools</h2>
+<div style="max-width:640px;margin:0 auto 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://tdee-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">TDEE & Calorie Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Wellness</div></a>
+      <a href="https://calorie-deficit-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Calorie Deficit Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Wellness</div></a>
+      <a href="https://body-fat-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Body Fat % Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Wellness</div></a>
+      <a href="https://bmi-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">BMI Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+    </div>
+</body>
+</html>
